@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-image: url(https://images.unsplash.com/photo-1555685812-4b943f1cb0eb?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position:center ;
+    display: grid;
+    place-items: center;
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+ 
+}
+
+.container{
+    width: 80%;
+    max-width: 850px;
+    background-color: rgba(0, 191, 255, 0.589);
+    text-align: center;
+    padding: 30px;
+    border-radius: 20px;
+}
+.container h1{
+    font-size: 36px;
+    margin-bottom: 40px;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+   
+}
+.container .question{
+    font-size: 26px;
+    margin-top: 20px;
+}
+.container .choices{
+    margin-top: 20px;
+}
+.choice{
+    font-size: 20px;
+    background-color: rgba(208, 235, 240, 0.536);
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: left;
+    width: 60%;
+    cursor: pointer;
+}
+.choice:hover{
+    background-color: rgba(0, 191, 255, 0.778);
+}
+.btn{
+    width: 60%;
+    font-size: 18px;
+    padding: 11px 18px;
+    cursor: pointer;
+    margin: 20px auto 0 auto;
+    background-color: rgba(5, 179, 165, 0.929);
+    border: none;
+    border-radius: 20px;
+    font-weight: 800;
+}
+
+.btn:hover{
+    background-color: rgba(0, 255, 255, 0.667);
+}
+
+.choices .selected{
+    background-color: rgba(45, 239, 55, 0.848);
+    
+}
+
+.scoreCard{
+    font-size:24px ;
+    margin-top: 20px;
+}
