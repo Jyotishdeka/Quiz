@@ -1,3 +1,5 @@
+
+
 *{
     margin: 0;
     padding: 0;
@@ -7,7 +9,7 @@
 body{
     width: 100%;
     height: 100vh;
-    background-image: url(https://images.unsplash.com/photo-1555685812-4b943f1cb0eb?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-image: url(./images/kitten.avif);
     background-size: cover;
     background-position:center ;
     display: grid;
@@ -20,10 +22,15 @@ body{
 .container{
     width: 80%;
     max-width: 850px;
-    background-color: rgba(0, 191, 255, 0.589);
+    background-color: rgba(124, 222, 255, 0.784);
     text-align: center;
     padding: 30px;
     border-radius: 20px;
+    display: none;
+    font-family: "Truculenta", sans-serif;
+    font-weight: 600;
+    
+    /* font-family: 'Times New Roman', Times, serif; */
 }
 .container h1{
     font-size: 36px;
@@ -33,14 +40,14 @@ body{
    
 }
 .container .question{
-    font-size: 26px;
+    font-size: 20px;
     margin-top: 20px;
 }
 .container .choices{
     margin-top: 20px;
 }
 .choice{
-    font-size: 20px;
+    font-size: 15px;
     background-color: rgba(208, 235, 240, 0.536);
     margin: 10px auto;
     padding: 10px;
@@ -48,6 +55,9 @@ body{
     text-align: left;
     width: 60%;
     cursor: pointer;
+    opacity: 0; /* Initially hidden */
+    animation: fadeIn 0.5s ease forwards; /* Apply animation */
+   
 }
 .choice:hover{
     background-color: rgba(0, 191, 255, 0.778);
@@ -76,4 +86,82 @@ body{
 .scoreCard{
     font-size:24px ;
     margin-top: 20px;
+}
+
+.alert{
+    background-color: rgb(167, 255, 167);
+    border-radius: 5px;
+    width: 100%;
+    padding: 12px;
+    position: absolute;
+    top: 0;
+    display: none;
+    font-family: 'Times New Roman', Times, serif;
+}
+.btnStart{
+    width: 15%;
+    padding-block: 20px;
+    text-align: center;
+
+}
+
+.timer{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    background-color: gold;
+    font-size: 24px;
+    font-weight: bold;
+    border: 3px solid rebeccapurple;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: pulse 1s ease-in-out infinite;
+}
+
+/* adding animation to choices*/
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+  
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+
+@media screen and (max-width:900px) {
+   .container{
+    width: 100%;
+    margin-top: 50px;
+   }
+   .container h1{
+      font-size: 22px;
+   } 
+   .container .question{
+    font-size: 20px;
+   } 
+   .container .choices{
+    font-size: 18px;
+   }
+   .btnStart{
+      width: 40%;
+   }
 }
