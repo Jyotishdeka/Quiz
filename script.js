@@ -10,9 +10,9 @@ const timer = document.querySelector(".timer")
 // make an array of objects thats stores question choices of answers
 const quiz = [
    {
-    question:"Q. Which of the following is not a CSS box model property ?",
-    choices: ["margin", "padding", "border-radius", "border-collapse"],
-    answer: "border-collapse"
+    question:"Q. Which of the following statements is incorrect about XPoSat ?\n1.NASA has launched XPoSat, short for X-ray Polarimeter Satellite.\n2. During the mission, the PSLV Orbital Experimental Module-3(POEM-3) experiment was executed to meet the objective of 10 other payloads.",
+    choices: ["1 Only", "2 Only", "Both", "none"],
+    answer: "1 Only"
    },
    {
     question: "Q. What does CSS stand for?",
