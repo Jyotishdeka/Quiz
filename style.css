@@ -18,6 +18,12 @@ body{
     font-weight: 400;
  
 }
+#btn_cont{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
 
 .container{
     width: 80%;
