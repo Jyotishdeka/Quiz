@@ -202,6 +202,7 @@ const quiz = [
   {
     question: "Q.Consider the following statements with respect to NAMO Drone Didi Scheme: \n1. It is a Central Sponsored Scheme. \n2. It aims to Make Women as Pioneers of Agricultural Revolution. \n3. Duration of the scheme-2023-24 to 2025-2026. \n4. The scheme will augment and ensure effective fertigation through new emerging liquid fertilizers like Nano Urea and Nano DAP. \nHow many of the above statements are incorrect?",
     choices: ["Only One", "Only Two", "Only Three", "All four"],
+    answer: "Only Three"
   },
 ];
 
